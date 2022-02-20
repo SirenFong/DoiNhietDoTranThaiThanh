@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginRight="15dp"
+    android:layout_marginLeft="15dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:text="Fahrenheit"
+        android:textSize="22sp"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/editText_fahrenheit"
+        android:textSize="22sp"
+        android:hint="fahrenheit"
+        android:inputType="numberDecimal"
+        android:textColor="@color/black"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:text="Celsius"
+        android:textSize="22sp"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/editText_cellsius"
+        android:textSize="22sp"
+        android:hint="cellsius"
+        android:inputType="numberDecimal"
+        android:textColor="@color/black"
+        android:layout_marginBottom="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/button_toCellsius"
+            android:textSize="22sp"
+            android:text="Cellsius To Fahrenheit"
+            android:textAllCaps="false"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/button_tofahrenheit"
+            android:textSize="22sp"
+            android:text="Fahrenheit To Cellsius"
+            android:textAllCaps="false"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <Button
+        android:id="@+id/button_clear"
+        android:textSize="22sp"
+        android:text="Clear"
+        android:padding="10dp"
+        android:textAllCaps="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
